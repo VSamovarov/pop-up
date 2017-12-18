@@ -136,7 +136,5 @@ body.on('click','.modalOpen',function(event) {
         popup().setContent($('#'+data.getBlockId).clone());
     }
 }); 
-//popup = new popup();
-//popup();
 // popup().overlayOpen();
 // popup().setContent('ddddwwwwdddd');

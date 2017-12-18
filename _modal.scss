@@ -1,0 +1,53 @@
+/* needed for old browsers */
+dialog {
+  display: block;
+}
+/* removes scroll when modal is opened */
+.no-scroll {
+  overflow: hidden;
+}
+/* overlay covers everything */
+#modalOverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 666;
+
+  background-color: rgba($grey-dark,0.3);
+}
+/* modal */
+#vsModal {
+  display: block;
+  padding: 1.5rem;
+
+  width: 55em;
+  max-width: 95%;
+
+  max-height: 95%;
+
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  overflow: auto;
+
+  z-index: 667;
+
+  border: 1rem solid #fff;
+  border-right: none;
+  border-left: none;
+  border-radius: $border-radius;
+
+}
+#vsModalContent {
+	
+}
+.vsModalClose {
+	position: relative;
+	z-index: 1000;
+	margin: 1em 2em 0 0;
+}

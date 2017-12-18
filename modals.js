@@ -133,7 +133,7 @@ body.on('click','.modalOpen',function(event) {
     var data = $(this).data();
     console.log(data);
     if(data.getBlockId !== undefined) {
-        popup().setContent($('#contact_us').clone());
+        popup().setContent($('#'+data.getBlockId).clone());
     }
 }); 
 //popup = new popup();
